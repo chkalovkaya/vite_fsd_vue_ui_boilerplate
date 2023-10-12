@@ -1,0 +1,75 @@
+.fade
+    &-enter-active,
+    &-leave-active
+        transition: opacity $transition-25
+
+    &-enter-from,
+    &-leave-to
+        opacity: 0
+
+.zoom
+    &-enter-active,
+    &-leave-active
+        transition: opacity $transition-25, transform $transition-25
+
+    &-enter-from,
+    &-leave-to
+        transform: scale(0)
+        opacity: 0
+        will-change: transform
+
+.height
+    &-enter-active,
+    &-leave-active
+        height: 100%
+        max-height: 100vh
+        overflow: hidden
+        transition: max-height $transition-25 ease-in-out
+
+    &-enter-from,
+    &-leave-to
+        max-height: 0
+
+.top
+    &-enter-active,
+    &-leave-active
+        transition: opacity $transition-25, transform $transition-25
+
+    &-enter-from,
+    &-leave-to
+        transform: translateY(-100%)
+        opacity: 0
+        will-change: transform
+
+.bottom
+    &-enter-active,
+    &-leave-active
+        transition: opacity $transition-25, transform $transition-25
+
+    &-enter-from,
+    &-leave-to
+        transform: translateY(100%)
+        opacity: 0
+        will-change: transform
+
+.left
+    &-enter-active,
+    &-leave-active
+        transition: opacity $transition-25, transform $transition-25
+
+    &-enter-from,
+    &-leave-to
+        transform: translateX(-100%)
+        opacity: 0
+        will-change: transform
+
+.right
+    &-enter-active,
+    &-leave-active
+        transition: opacity $transition-25, transform $transition-25
+
+    &-enter-from,
+    &-leave-to
+        transform: translateX(100%)
+        opacity: 0
+        will-change: transform
